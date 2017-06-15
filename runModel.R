@@ -1,6 +1,5 @@
 source ("functions.r")
-source("CorrelationModel.r")
-source("GroupsModel.r")
+
 #Initiate the stan model - that might take some time
 model<-stan_model(model_code=stanModelFull) 
 
