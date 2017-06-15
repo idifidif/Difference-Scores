@@ -3,7 +3,7 @@ Code for Bayesian modelling of difference scores.
 See Fradkin, I., Siegelman, N & Huppert, J. D. (Submitted). Novel solutions for (very) old problems: using Bayesian modeling for the analysis of difference scores.
 
 
-We update this branch constantly, to add new models and update old ones
+We update this repository constantly, to add new models and update old ones. So keep updated. For additional information - idifidif@gmail.com
 
 # File list:
 - CorrelationModel.r - includes STAN models focused on the analysis of the correlation between difference scores and a third variable of interest (i.e. TY). Central parameterization is given to enhance the understanding of the model structure. Non-central parameterization is more efficient.
