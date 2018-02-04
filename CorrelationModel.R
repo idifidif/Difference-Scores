@@ -1,6 +1,6 @@
 #Simple stan model centeral parametarization
 
-T1DYCentral="
+TDTYCentral="
 #these are the known nodes
 data{ 
 real<lower=0,upper=1> rel1;
@@ -48,7 +48,7 @@ for (s in 1:nSubj){
 
 #(same) Stan model non-centeral parametarization. This is a more complicated definition for the same model, which is much more efficient in stan----
 
-T1DYNonCentral="
+TDTYNonCentral="
 
 #This part defines the known nodes of the model
 
