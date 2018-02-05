@@ -154,8 +154,8 @@ load("T1Dlist.Rdata")
 #Bayesian solution----
 source("CorrelationModel.R")
 stanDSOOpt<-stan_model(model_code = TDTYNonCentral) #Read model
-Nsims=1 #Number of scenarios
-repetitions=100 #Number of repetitions/samples per scenario
+Nsims=216 #Number of scenarios
+repetitions=1000 #Number of repetitions/samples per scenario
 
 Result=rep(list(list()),Nsims)
 ptm0 <- proc.time()
