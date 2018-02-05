@@ -610,22 +610,7 @@ for (sim in 1:216){
 
 for (sim in 1:216){
   N=length(O2_empirical[[sim]][[1]])
- # if(ResultSEM[[sim]][[at10[sim]]]$value[1]>1) {ResultSEM[[sim]][[at10[sim]]]$value[1]=
-#      (ResultSEM[[sim]][[at10[sim]]]$upper[1]+ResultSEM[[sim]][[at10[sim]]]$lower[1])/2}
-#  if(ResultSEM[[sim]][[at10[sim]]]$value[1]<-1) {ResultSEM[[sim]][[at10[sim]]]$value[1]=
-#      (ResultSEM[[sim]][[at10[sim]]]$upper[1]+ResultSEM[[sim]][[at10[sim]]]$lower[1])/2}
-
-  #if(ResultSEM[[sim]][[at50[sim]]]$value[1]>1) {ResultSEM[[sim]][[at50[sim]]]$value[1]=
-  #  (ResultSEM[[sim]][[at50[sim]]]$upper[1]+ResultSEM[[sim]][[at50[sim]]]$lower[1])/2}
-  #if(ResultSEM[[sim]][[at50[sim]]]$value[1]<-1) {ResultSEM[[sim]][[at50[sim]]]$value[1]=
-   # (ResultSEM[[sim]][[at50[sim]]]$upper[1]+ResultSEM[[sim]][[at50[sim]]]$lower[1])/2}
-  
-#  if(ResultSEM[[sim]][[at90[sim]]]$value[1]>1) {ResultSEM[[sim]][[at90[sim]]]$value[1]=
-#    (ResultSEM[[sim]][[at90[sim]]]$upper[1]+ResultSEM[[sim]][[at90[sim]]]$lower[1])/2}
- # if(ResultSEM[[sim]][[at90[sim]]]$value[1]<-1) {ResultSEM[[sim]][[at90[sim]]]$value[1]=
-#    (ResultSEM[[sim]][[at90[sim]]]$upper[1]+ResultSEM[[sim]][[at90[sim]]]$lower[1])/2}
-  
-    
+ 
   plots[plots$sim==sim & plots$quant=="10","SEM"]<-ResultSEM[[sim]][[at10[sim]]]$value[1]
   plots[plots$sim==sim & plots$quant=="10","SEMl"]<-ResultSEM[[sim]][[at10[sim]]]$lower[1]
   plots[plots$sim==sim & plots$quant=="10","SEMu"]<-ResultSEM[[sim]][[at10[sim]]]$upper[1]
